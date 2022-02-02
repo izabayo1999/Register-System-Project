@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Death register</title><br>
+    
+    
+<h1>  Fill the registration form and enter all required information</h1><br><br>
+</head>
+<body>
+    <fieldset>
+       
+        <legend><b>Personal Details</b></legend>
+<form action ="connect.php" method ="POST" >
+    <div align="center">
+	<table>
+		<tr>
+			<td>
+				Deceased person:
+			</td>
+
+			<td>
+				<input type=”text”  required placeholder=”Names” name=”deceasedperson” id="deceasedperson">
+			</td>
+		</tr>
+
+
+<tr>
+<td>
+    Deceased ID number:
+			</td>
+
+			<td>
+                <input type=”number” required placeholder=”ID” name=”numberID” id="numberID" min="1" max="15">
+			</td>
+		</tr>
+
+        <tr>
+            <td>
+                           
+                                <tr>
+                                    <td>
+                                                    spause name:
+                                                </td>
+                                    
+                                                <td>
+                                                    <input type=”text”  placeholder=”spause” name=”spause” id="spouse">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    Deceased Father name:
+                                                            </td>
+                                                
+                                                            <td>
+                                                                <input type=”text” required placeholder=”Father” name=”father” id="father">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Deceased Mather name:
+                                                                        </td>
+                                                            
+                                                                        <td>
+                                                                            <input type=”text” required placeholder=”Mather” name=”mather” id="mather">
+                                                                        </td>
+                                                                    </tr>
+                                                                                                                             
+
+
+
+
+	</table><br><br>
+    <h1>Deceased gender</h1>
+
+    <input type="radio"  name="gender" value="m" id="male"  > Male<br> <input type="radio"  name="gender" value="f" id="female" > Female<br>
+
+<h1> Deceased residence place</h1><br>
+  
+  <label for="region">Provinces</label>
+  <select id="region" required name="province" >
+    <option value="Rwanda">East </option><br><br>
+    <option value="Province">West</option>
+    <option value="District">North</option>
+    <option value="Distric">South</option>
+    <option value="Distric">Kigali City</option>
+
+  </select><br><br>
+  <label for="region">districts</label>&nbsp;&nbsp;
+  <select id="region" required name="district">
+    <option value="Rwanda">Ngororero </option><br><br>
+    <option value="Province">Musanze</option>
+    <option value="Distric">Kicukio</option>
+    
+  </select><br><br>
+  <label for="region">Sectors</label>&nbsp;&nbsp;
+  <select id="region" required name="sector">
+    <option value="Rwanda">Muhororo </option><br><br>  
+    <option value="District">Gatenga</option>
+    <option value="Distric">Muhoza</option>
+    
+  </select><br><br><br>
+
+  <label for="date-label">Date of deceased born:</label>
+  <input type="date" required name="bday" id="bday">
+
+  <label for="date-label">Date of deceased dead:</label>
+  <input type="date" required name="dday" id="dday">
+  <br><br><br>
+
+  <h1>Click on submit button and registration is done.!!!!!</h1><br>
+
+  <input type="submit" id="Submit" value="SUBMIT" class="btn btn-primary"><br><br>
+
+  <a href="index.html" type="button" class="cta"> BACK</a>
+
+</form>
+</fieldset>
+</div>
+
+</body>
+
+</html>
